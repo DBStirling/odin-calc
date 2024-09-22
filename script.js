@@ -46,10 +46,6 @@ function runCalculation(string) {
     operator = string[operatorIndex];
     num2 = string.slice(operatorIndex+1);
 
-    // console.log(num1);
-    // console.log(operator);
-    // console.log(num2);
-
     let answer = calculate(num1, operator, num2);
     editDisplay(answer);
 
