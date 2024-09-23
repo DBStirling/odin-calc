@@ -1,8 +1,15 @@
+html *
+{
+   font-size: 24px !important;
+   color: #000 !important;
+   font-family: Arial !important;
+}
+
 .mainContainer {
     display: flex;
     flex-direction: column;
-    width: 640px;
-    height: 900px;
+    width: 680px;
+    height: fit-content;
     padding: 40px;
     align-items: center;
     justify-content: flex-start;
@@ -14,10 +21,54 @@
 }
 
 .output {
-    height: 100px;
+    width: 100%;
+    height: 50px;
     border: 1px black solid;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.display {
+    padding: 0px 15px;
+}
+
+.numberContainer {
+    width: 90%;
+}
+
+.operatorContainer {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+.operator {
+    width: 100% !important;
 }
 
 .input {
-    border: 1px black solid;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    width: 32%;
+    height: 50px;
+}
+
+.add {
+    background-color: aliceblue;
+}
+
+.subtract {
+    background-color: honeydew;
+}
+
+.multiply {
+    background-color: darkkhaki;
+}
+
+.divide {
+    background-color: bisque;
 }
